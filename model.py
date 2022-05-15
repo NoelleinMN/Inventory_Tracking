@@ -27,6 +27,8 @@ class Warehouse(db.Model):
 
     item_location = db.relationship('Inventory', backref='item_location')
 
+    # TODO: update this to reflect creation of a warehouse and also the items housed within
+    # or, skip items upon return and, instead, make a separate function to get that listing?
     def __repr__(self):
         return f'<Inventory ID: {self.item_id} Warehouse ID: {self.warehouse_id} Warehouse City: {self.warehouse_city}>'
 
@@ -45,5 +47,5 @@ if __name__ == '__main__':
 
     # Can execute connect_to_db(app, echo=False) if program output gets too annoying;
     # this will tell SQLAlchemy not to print out every query it executes.
-    
+
     connect_to_db(app)
