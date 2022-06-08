@@ -1,4 +1,4 @@
-# Fall 2022 - Shopify Developer Intern Challenge
+# Challenge
 Task: Build an inventory tracking web application for a logistics company.
 
 # Tech Stack
